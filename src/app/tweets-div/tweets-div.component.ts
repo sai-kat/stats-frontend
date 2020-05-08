@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tweets-div.component.css']
 })
 
-export class AppModule { }
 export class TweetsDivComponent implements OnInit {
 
   constructor() { }

@@ -15,8 +15,21 @@ export class StatsShowComponent implements OnInit {
   barChartOptions: ChartOptions = {
     legend: {
       labels: {
-        fontColor: "#fff"
+        fontColor: 'white'
       }
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          fontColor: 'white'
+        },
+      }],
+      xAxes: [{
+        ticks: {
+          fontColor: 'white'
+        },
+      }]
     },
     responsive: true,
   };
