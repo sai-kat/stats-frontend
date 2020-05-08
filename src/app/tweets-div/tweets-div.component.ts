@@ -9,6 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class TweetsDivComponent implements OnInit {
 
   constructor() { }
+  alternate: boolean = true;
+  toggle: boolean = true;
+  color: boolean = false;
+  size: number = 40;
+  expandEnabled: boolean = true;
+  contentAnimation: boolean = true;
+  dotAnimation: boolean = true;
   side = 'left';
   entries = [
     {

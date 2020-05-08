@@ -1,18 +1,16 @@
 <p>tweets-div works!</p>
-<mgl-timeline>
-    <mgl-timeline-entry>
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
+<mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <!-- <div class="mgl-timeline-line" id="line"></div> -->
+    <mgl-timeline-entry *ngFor="let entry of entries; let i = index;">
+        <mgl-timeline-entry-header>Tweet1</mgl-timeline-entry-header>
         <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-        
+        <!-- <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size"></mgl-timeline-entry-dot> -->
+        <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" 
+                            [size]="size"
+                            (click)="onDotClick($event)"
+                            [expandAnimationTiming]="dotAnimation ? '200ms ease' : '0ms'"
+                            [collapseAnimationTiming]="dotAnimation ? '100ms ease' : '0ms'"
+                            ></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
 </mgl-timeline>
   
