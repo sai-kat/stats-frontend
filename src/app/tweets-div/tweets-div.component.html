@@ -1,16 +1,24 @@
-<p>tweets-div works!</p>
-<mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
-    <!-- <div class="mgl-timeline-line" id="line"></div> -->
-    <mgl-timeline-entry *ngFor="let entry of entries; let i = index;">
-        <mgl-timeline-entry-header>Tweet1</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-        <!-- <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size"></mgl-timeline-entry-dot> -->
-        <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" 
-                            [size]="size"
-                            (click)="onDotClick($event)"
-                            [expandAnimationTiming]="dotAnimation ? '200ms ease' : '0ms'"
-                            [collapseAnimationTiming]="dotAnimation ? '100ms ease' : '0ms'"
-                            ></mgl-timeline-entry-dot>
-    </mgl-timeline-entry>
-</mgl-timeline>
-  
+<!-- <p>tweets-div works!</p> -->
+<div class="tweet-container">
+    <div class="vertical"></div>
+
+    <div class="tweetbox" *ngFor="let entry of entries;let i = index;">
+        <div class="username">[{{entry.username}}]</div>
+        <div class="time">{{entry.time}}</div>
+        <div class="tweettext">
+            {{entry.text}}
+        </div>
+    </div>
+    <div class="circle"></div>
+</div>
+    <!-- <div class="tweetbox">
+        <div class="username">username</div>
+        <div class="time">23h</div>
+        <div class="tweettext">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Natus perferendis error rem cupiditate adipisci, tenetur vel nisi pariatur 
+            labore quas debitis quae molestias.
+            Deleniti est sit atque eveniet delectus fugit!
+        </div>
+    </div>
+</div>-->

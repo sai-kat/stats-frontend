@@ -53,6 +53,7 @@ p {
 .content {
   display: flex;
   margin: 82px auto 32px;
+  /* margin: 150px auto 32px auto; */
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
@@ -160,10 +161,10 @@ a:hover {
 .terminal {
   position: relative;
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
   border-radius: 6px;
   padding-top: 45px;
-  margin-top: 50px;
+  margin-top: 40px;
   overflow: hidden;
   background-color: rgb(15, 15, 16);
 }
@@ -181,7 +182,7 @@ a:hover {
   line-height: 0;
   padding: 14px 0;
   text-indent: 4px;
-}
+} 
 
 .terminal pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;

@@ -9,30 +9,26 @@ import { Component, OnInit } from '@angular/core';
 export class TweetsDivComponent implements OnInit {
 
   constructor() { }
-  alternate: boolean = true;
-  toggle: boolean = true;
-  color: boolean = false;
-  size: number = 40;
-  expandEnabled: boolean = true;
-  contentAnimation: boolean = true;
-  dotAnimation: boolean = true;
-  side = 'left';
   entries = [
     {
-      header: 'header',
-      content: 'content'
+      username: 'username',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas',
+      time: '23h'
     },
     {
-      header: 'header',
-      content: 'content'
+      username: 'username',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas',
+      time: '23h'
     },
     {
-      header: 'header',
-      content: 'content'
+      username: 'username',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas',
+      time: '23h'
     },
     {
-      header: 'header',
-      content: 'content'
+      username: 'username',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas',
+      time: '23h'
     }
   ];
   ngOnInit(): void {
