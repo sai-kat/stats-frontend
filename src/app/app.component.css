@@ -53,12 +53,11 @@ p {
 .content {
   display: flex;
   margin: 82px auto 32px;
-  
+  text-align: center;
   /* margin: 150px auto 32px auto; */
   padding: 0 16px;
-  max-width: 960px;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 svg.material-icons {
@@ -133,7 +132,7 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px;
 }
 
-/* svg#rocket {
+svg#rocket {
   width: 80px;
   position: absolute;
   left: -10px;
@@ -146,7 +145,7 @@ svg#rocket-smoke {
   top: 10px;
   right: 180px;
   z-index: -10;
-} */
+}
 
 a,
 a:visited,
@@ -158,20 +157,24 @@ a:hover {
 a:hover {
   color: #125699;
 }
-
 .terminal {
+  /* margin-right: auto;
+  margin-left: auto; */
+  display: inline-block;
+  align-self: center;
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   border-radius: 6px;
   padding-top: 45px;
-  margin-top: 40px;
+  margin-top: 25px;
   overflow: hidden;
   background-color: rgb(15, 15, 16);
 }
 
 .terminal::before {
   content: "\2022 \2022 \2022";
+  text-align: left;
   position: absolute;
   top: 0;
   left: 0;
@@ -186,6 +189,7 @@ a:hover {
 } 
 
 .terminal pre {
+  text-align: left;
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   color: white;
   padding: 0 1rem 1rem;
@@ -288,7 +292,84 @@ svg#clouds {
     visibility: hidden;
   }
 }
+pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  color: white;
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
 
-.count{
-  float: left;
+.chart-wrapper{
+  color: white;
+}
+
+
+.tweet-container{
+margin-top: 50px;
+margin-bottom: 20px;
+text-align: center;
+position: relative;
+}
+/* .tweet-container::after{
+height: 25px;
+width: 25px;
+border-radius: 50%;
+background-color: rgb(0, 0, 0);
+position: absolute;
+} */
+.username{
+  display: block;
+font-size: 16px;
+font-style: italic;
+margin-right: 10px;
+float: left;
+}
+
+.time{
+  display: block;
+  position: relative;
+  text-align: left;
+font-size: 16px;
+/* color: rgb(120, 128, 136); */
+font-style: italic;
+}
+
+.tweettext
+{
+margin-top: 2px;
+}
+.tweetbox{
+align-self: inherit;
+color:rgb(0, 0, 0);
+/* position: relative; */
+display: inline-block;
+background-color: #e2e2e2;
+margin-bottom:20px;
+width: 600px;
+border-radius: 5px;
+padding: 0px 10px 0px 10px;
+}
+.tweetbox:hover{
+color: #e2e2e2;
+background-color: #353434;
+}
+div.vertical {
+align-self: center;
+position: absolute;
+/* position: static; */
+height:fit-content;
+padding-top: 100%;
+width:0;
+border:1px solid rgb(24, 30, 31);
+margin: 0 50% 0 50%;
+z-index: -10000;
+}
+.count-box{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 30%;
+  background-color:#e2e2e2;
+  width: 80%;
+  border-radius: 5px;
 }
