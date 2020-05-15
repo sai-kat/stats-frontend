@@ -352,6 +352,7 @@ padding: 0px 10px 0px 10px;
 .tweetbox:hover{
 color: #e2e2e2;
 background-color: #353434;
+transition: all 0.5s;
 }
 div.vertical {
 align-self: center;
