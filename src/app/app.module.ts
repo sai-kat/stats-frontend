@@ -12,7 +12,7 @@ import { TweetsDivComponent } from './tweets-div/tweets-div.component';
   declarations: [
     AppComponent,
     StatsShowComponent,
-    TweetsDivComponent
+    TweetsDivComponent,
   ],
   imports: [
     BrowserModule,
